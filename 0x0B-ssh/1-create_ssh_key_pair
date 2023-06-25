@@ -3,4 +3,4 @@
 
 ssh-keygen -b 4096
 echo '~/.ssh/school'
-echo 'Betty'
+echo 'betty'
