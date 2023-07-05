@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-
 # configures haproxy on a new server
+
 sudo apt-get -y update
 apt-get -y install haproxy
 
