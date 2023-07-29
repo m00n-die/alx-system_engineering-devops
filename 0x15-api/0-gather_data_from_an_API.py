@@ -6,6 +6,7 @@ import sys
 
 
 if __name__ == "__main__":
+    """starts the script"""
     all_tasks = 0
     completed_tasks = 0
     emp_id = sys.argv[1]
