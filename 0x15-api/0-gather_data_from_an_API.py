@@ -30,6 +30,4 @@ print("Employee {} is done with tasks({}/{}):".format
 #print("Employee {} is done with tasks({}/{}):".format
 #(emp_name, completed_tasks, all_tasks))
 
-for item in todo:
-    if 'completed' in item:
-        print("\t {}".format(item.get('title')))
+[print("\t {}".format(elem)) for elem in complete]
