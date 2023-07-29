@@ -34,7 +34,7 @@ if __name__ == "__main__":
         if 'userId' in item:
             temp_items = []
             temp_items.append(todo.get('userId'))
-            temp_items.append(user_name)
+            temp_items.append(emp_name)
             temp_items.append(todo.get('completed'))
             temp_items.append(todo.get('title'))
             csv_items.append(temp_items)
