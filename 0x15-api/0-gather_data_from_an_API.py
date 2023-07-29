@@ -13,7 +13,7 @@ if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com"
     user = requests.get(f"{url}/users/{emp_id}")
     TODO = requests.get(f"{url}/todos", params={"userId": emp_id})
-    emp_name = user.json().get("name")
+    emp_name = str(user.json().get("name"))
     todo = TODO.json()
 
     """
