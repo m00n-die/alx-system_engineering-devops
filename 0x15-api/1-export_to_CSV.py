@@ -18,7 +18,6 @@ if __name__ == "__main__":
     emp_name = str(user.json().get("name"))
     todo = TODO.json()
     csv_items = []
-    
 
     """
     for item in todo:
@@ -32,7 +31,7 @@ if __name__ == "__main__":
     for item in todo:
         if item.get('completed') is True:
             complete.append(item.get('title'))
-        if 'userId' in item:    
+        if 'userId' in item:
             temp_items = []
             temp_items.append(todo.get('userId'))
             temp_items.append(user_name)
