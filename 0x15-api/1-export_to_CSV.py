@@ -15,17 +15,11 @@ if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com"
     user = requests.get(f"{url}/users/{emp_id}")
     TODO = requests.get(f"{url}/todos", params={"userId": emp_id})
+    
     emp_name = str(user.json().get("name"))
+    user_name = r_for_users.json().get('username')
     todo = TODO.json()
     csv_items = []
-
-    """
-    for item in todo:
-        if 'userId' in item:
-            all_tasks += 1
-        if 'completed' in item:
-            completed_tasks += 1
-    """
 
     complete = []
     for item in todo:
@@ -34,7 +28,7 @@ if __name__ == "__main__":
         if 'userId' in item:
             temp_items = []
             temp_items.append(todo.get('userId'))
-            temp_items.append(emp_name)
+            temp_items.append(user_name)
             temp_items.append(todo.get('completed'))
             temp_items.append(todo.get('title'))
             csv_items.append(temp_items)
