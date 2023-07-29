@@ -30,7 +30,7 @@ if __name__ == "__main__":
                            "task": todo.get("title"),
                            "completed": todo.get("completed")}
                 todos.append(my_dict)
-       
+
         dictionary[user.get("id")] = todos
     with open(file_name, 'w+') as f:
         json.dump(dictionary, f)
