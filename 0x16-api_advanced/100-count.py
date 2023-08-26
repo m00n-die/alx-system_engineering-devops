@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-counts words in all hot posts
-"""
+"""counts words in all hot posts"""
 
 import requests
 
